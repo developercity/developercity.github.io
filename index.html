@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>Developer City</title>
+   
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <script src="jquery.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
     
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	
@@ -22,32 +28,57 @@
 
 
 
-
-<header>
+<div id="owl-example">
+<header class="headerone">
         <nav>
             <div class="row clearfix">
-                <img src="images/thapalogo.png" class="logo">
+             <!--    <img src="images/thapalogo.png" class="logo"> -->
 
                 <ul class="main-nav animated slideInDown" id="check-class" style="font-family: serif;">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">ABOUT ME </a></li>
-                    <li><a href="#">MORE DETAIL</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#portfolio">MY PORTFOLIO </a></li>
+                    <li><a href="#career">CAREER</a></li>
+                    <li><a href="#news">NEWS</a></li>
                 </ul>
                 <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
             </div>
         </nav>
 
         <div class="main-content-header">
-            <h1 style="font-family: serif;font-weight: bolder;"> WELCOME TO <span class="colorchange" style="font-family: serif;font-weight: bolder;">DEVELOPER CITY</span>.<br>
-                HOUSE OF CODE LOVER OO YES. </h1>
-            <a href="#" class="btn btn-full"> click to Facebook</a>
-            <a href="#" class="btn btn-nav"> click to Youtube</a>
+            <h1 style="font-family: serif;font-weight: bolder;"> WELCOME TO <span class="colorchang" style="font-family: serif;font-weight: bolder;">DEVELOPER CITY</span>.<br>
+                HOUSE OF CODE LOVER.</h1>
+            <a target="_blank" href="https://www.facebook.com/Developer-Man-981030605407571/?epa=SEARCH_BOX" class="btn btn-nav"> click to Facebook</a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC_UgiwaNHxAfzg-LXJlLc0A" class="btn btn-nav"> click to Youtube</a>
+        </div>
+    </header>
+
+<header class="headertwo">
+        <nav>
+            <div class="row clearfix">
+             <!--    <img src="images/thapalogo.png" class="logo"> -->
+
+                <ul class="main-nav animated slideInDown" id="check-class" style="font-family: serif;">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#portfolio">MY PORTFOLIO </a></li>
+                    <li><a href="#career">CAREER</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                </ul>
+                <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+            </div>
+        </nav>
+
+        <div class="main-content-header">
+            <h1 style="font-family: serif;font-weight: bolder;"> WELCOME TO <span class="colorchang" style="font-family: serif;font-weight: bolder;">DEVELOPER CITY</span>.<br>
+                HOUSE OF CODE LOVER.</h1>
+            <a target="_blank" href="https://www.facebook.com/Developer-Man-981030605407571/?epa=SEARCH_BOX" class="btn btn-nav"> click to Facebook</a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC_UgiwaNHxAfzg-LXJlLc0A" class="btn btn-nav"> click to Youtube</a>
         </div>
     </header>
 
 
-
+</div>
 
 
 
@@ -78,15 +109,51 @@
 <!-- -----------------------------------------------------My Porfolio Start -->
 
 
-<h1 style="color: white;font-size: 32px;font-family: serif;text-align: center;font-weight: bold;"><u>ABOUT ME</u></h1>
+<h1 id="about" style="color: white;font-size: 32px;font-family: serif;font-weight: bold;border-left: 128px solid #ba2a2a;border-right: 128px solid #ba2a2a;text-align: center;border-radius: 30%;">ABOUT ME</h1> <br><br>
 
 
-<br><br>
-<div class="container-fluid" style="background-color: black">
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" style="background-color: #ba2a2a">
     <div class="row">
         <div class="col-md-5"><br>
-           <a href="sorrynocopy.html" target="-blank"> <img id="respon" style="border-radius: 40%;" src="images/homec.jpg"></a><br><br>
+
+            <div id="owl-demo">
+          
+  <div class="item"><img  id="respon" src="images/crop.jpg" alt="Owl Image"></div>
+  <div class="item"><img  id="respon" src="images/shah.jpg" alt="Owl Image"></div>
+  <div class="item"><img  id="respon" src="images/IMG_3041 copy.jpg" alt="Owl Image"></div>
+
+
+ 
+</div>
+           <!-- <a href="sorrynocopy.html" target="-blank"> <img id="respon" style="border-radius: 50%;height: 360px;width: 370px;" src="images/crop.jpg"></a><br><br> -->
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <br>
@@ -95,30 +162,53 @@
         <h1 style="text-align: center;padding-right: 20%; font-family: serif;color: white;" >
                 Shahid Riaz
             </h1>
-                   <h3 style="font-family: 'Judson', serif;color: white; " class="para3">If you already have a concept in mind, i'd love to hear about your project, feel free to describe the project as much as you can and we will get back to you. Call me on <br><br>(+92)3000-212769<br> (+92)068-5575944 <br>
-                Moreover you can contect me on by using Email: <br><a href=https://www.google.com.pk/ class="para3">Shahidriazkpr@gmail.com </a></h3>
+                   <h3 style="font-family: 'Judson', serif;color: white; " class="para3">
+
+
+                    Information Technology is wast field and repitidly growing now a days. That is why i choose IT field as a profession. I am Web developer, web designer and graphic designer as well. I am owner of a software house which is located in Khanpur.
+                    I also provide online coaching classes.<br>
+                    I’m constantly learning web technologies and other design related topics, currently playing around with PHP and JQuery. I’m a skilled in many areas of design and development. 
+                    <br>
+                    Some of my skills include:HTML5,CSS3,BOOTSTRAP,JQUERY,PHP,JAVESCRIPT.
+                    <br><br>(+92)3000-212769<br> (+92)068-5575944 <br>
+
+
+                Moreover you can contect me on by using Email: <br><br>
+
+
+                <a target="_blank" style="color:black" href=https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm0%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin class="para3">Shahidriazkpr@gmail.com </a></h3>
     </div>
 </div>
 
 
 
+</div>
 
 
 
+<br>
 
+
+
+<h1 id="portfolio" style="color: white;font-size: 32px;font-family: serif;font-weight: bold;border-left: 100px solid #ba2a2a;border-right: 100px solid #ba2a2a;text-align: center;border-radius: 30%;">MY PORTFOLIO</h1>
 
 
 <div  class="dive" id="Photo"> 
             <div  class="container-fluid"> <br><br>
 
-<h1 style="color: white;font-family: serif;font-weight: bold;font-size: 32px;text-align: center;"><u>MY PORTFOLIO</u></h1>
+
+
+
+
+
+
 
      <br>
      		<div class="row">
      				<div class="col-md-6">
-     						 <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+     						 <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/m.png"></a> <br><br>
      							
-                                <p id="portparagraphfirst">Web development broadly refers to the tasks associated with developing websites for hosting via intranet or internet.The web development process includes web design, web content development,client-side/server-side scripting and network security configuration,among other tasks. </p>
+                                <p id="portparagraphfirst">Web development broadly refers to the tasks associated with developing websites for hosting via intranet or internet.The web development process includes web design,client-side/server-side scripting and network security configuration,among other tasks. </p>
      				</div>
 
 
@@ -129,9 +219,11 @@
 
 
                     <div class="col-md-6">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/design.jpg"></a> <br><br>
                                 
-                                <p id="portparagraphfirst">website design means planning, creation and updating of websites. Website design also involves information architecture, website structure, user interface, navigation ergonomics, website layout, colors, contrasts, fonts and imagery (photography) as well as icons design.</p>
+                                <p id="portparagraphfirst">My Design process always starts with a pencil and paper, scribbling ideas and concepts, thinking about the problem and the solution.
+
+Once I have an idea of what I want to achieve, I’ll then sit down at my computer and start with wire frames and low level mockups. Then add the imagery, typography design and details.</p><br>
                     </div>
 
 
@@ -152,19 +244,19 @@
 
 
                      <div class="col-md-4">
-                            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+                            <a href="sorrynocopy.html" target="-blank"><img style="height: 240px;" id="respon" src="images/html2.png"></a> <br><br>
 
                               <p id="portparagraphfirst">HTML stands for HyperText Markup Language. Developed by scientist Tim Berners-Lee in 1990, HTML is the "hidden" code that helps us communicate with others on the World Wide Web (WWW). When writing HTML, you add "tags" to the text in order to create the structure.</p>
                     </div>
 
 
                       <div class="col-md-4">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/css.jpg"></a> <br><br>
                              <p id="portparagraphfirst">The colour of something is the appearance that it has as a result of the way in which it reflects light. Red, blue, and green are colours. ... A colour is a substance you use to give something a particular colour. Dyes and make-up are sometimes referred to as colours </p>
                     </div>
 
                       <div class="col-md-4">
-                            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+                            <a href="sorrynocopy.html" target="-blank"><img style="height: 240px;" id="respon" src="images/boot.jpg"></a> <br><br>
                               <p id="portparagraphfirst">Bootstrap is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </p>
                     </div>
 
@@ -178,32 +270,39 @@
 
 
 
+  </div>
+      
+     </div>
+</div>     
+   
 
 
 
 
+<br>
 
 
 
-
-
-
+<div class="container-fluid">
+  <div class="row">
+    
+ 
 
 
   <div class="col-md-4">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+                             <a href="sorrynocopy.html" target="-blank"><img style="height: 240px;" id="respon" src="images/q.jpg"></a> <br><br>
 
                               <p id="portparagraphfirst">Jquery stands for HyperText Markup Language. Developed by scientist Tim Berners-Lee in 1990, HTML is the "hidden" code that helps us communicate with others on the World Wide Web (WWW). When writing HTML, you add "tags" to the text in order to create the structure.</p>
                     </div>
 
 
                       <div class="col-md-4">
-                            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                             <p id="portparagraphfirst">Web development broadly refers to the tasks associated with developing websites for hosting via intranet or internet.The web development process includes web design, web content development,client-side/server-side scripting and network security configuration,among other tasks. </p>
+                            <a href="sorrynocopy.html" target="-blank"><img style="height: 240px;" id="respon" src="images/php.jpg"></a> <br><br>
+                             <p id="portparagraphfirst">Hypertext Preprocessor is a general-purpose programming language originally designed for web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.PHP originally stood for Personal Home Page,but it now stands for the recursive initialism PHP: Hypertext Preprocessor. </p>
                     </div>
 
                       <div class="col-md-4">
-                            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
+                            <a href="sorrynocopy.html" target="-blank"><img style="height: 240px;" id="respon" src="images/jss.jpg"></a> <br><br>
                               <p id="portparagraphfirst">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </p>
                     </div>
                     
@@ -213,14 +312,12 @@
 
 
 
+ </div>
+</div>
 
 
-
-     		</div>
      	
-     </div>
-</div>     
-   
+<br><br>
 
 
 
@@ -249,31 +346,237 @@
 
 
 
-<br><br><br><br>
-<div class="container-fluid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-color: #C25420" class="container-fluid">
+
+  <h1 id="career" style="color: white;font-size: 32px;font-family: serif;font-weight: bold;border-left: 100px solid #ba2a2a;border-right: 100px solid #ba2a2a;text-align: center;border-radius: 30%;">CAREER</h1> <br><br><br><br>
     <div class="row">
-        <div class="col-md-2">
-                            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                    </div>
+        <div class="col-md-6">
+          
+<p>I need a team on webdevelopment.Web teams are made up of a diverse group of people who all contribute their skills in multiple avenues. Each person has a different role that combines with the others to work toward a common goal. ... Before any products or digital services can be offered, the web team must make edits and check for quality.
+<br><br>
+Teamwork is the collaborative effort of a group to achieve a common goal or to complete a task in the most effective and efficient way. This concept is seen within the greater framework of a team, which is a group of interdependent individuals who work together towards a common goal
+</p>
 
-                       <div class="col-md-2">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                    </div>
-                       <div class="col-md-2">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                    </div>
-                       <div class="col-md-2">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                    </div>
-                       <div class="col-md-2">
-                             <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                    </div>
-                       <div class="col-md-2">
-                            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/homec.jpg"></a> <br><br>
-                    </div>
+           <br><br>
+        </div>
+
+
+
+
+
+        <div class="col-md-6">
+            <a href="sorrynocopy.html" target="-blank"><img id="respon" src="images/teamm.jpg"></a> <br><br>
+        </div>
     </div>
 </div>
-    
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="background-color: #008281;margin-top: -56px;" class="container-fluid">
+
+
+
+    <h1 id="news" style="color: white;font-size: 32px;font-family: serif;font-weight: bold;border-left: 100px solid white;border-right: 100px solid white;text-align: center;border-radius: 30%;">GOOD NEWS</h1>
+
+
+    <div class="row">
+
+
+<div class="col-md-12"><p>
+                       <h2 align="center"><u>ADMISSION OPEN</u></h2>
+                       <h3 align="center">The Superior Group of Colleges Khanpur</h3>
+                       
+
+</div>
+
+
+
+
+
+      <div class="col-md-12">
+
+        <div id="owl-exampleee">
+        <a href=""><img  id="respon" src="images/11th.jpg"></a>
+        <a href=""><img  id="respon" src="images/haseb-riaz.jpg"></a>
+           <a href=""><img  id="respon" src="images/superior-ad.jpg"></a>
+            <a href=""><img  id="respon" src="images/tt.jpg"></a>
+     
+</div>
+
+
+          <div class="col-md-4">
+            <a href=""><img style="height: 350px;" id="respon" src="images/logo.png"></a>
+          </div>
+      
+
+      <div class="col-md-8">
+         <h1 align="center">THE SUPERIOR STORY</h1>
+
+We, at Superior, are steered by our values.
+Team Work . Student Success . Excellence . Innovation . Agility . Fairness 
+‘Facilitating superior human beings’ was the intent which gave rise to the Superior College Lahore.
+
+With over 250 college campuses all around the country, we strive hard every day to achieve our mission. Our efforts of making Superior University recognized by well-reputed international educational institutions led us to this time when we have more than hundred universities on board with us from across the globe.We feel safe to say that Superior University is now considered to be one of the best universities in Pakistan..</p>
+
+<h4>Address: City Garden Phase II Opposite Levish Garden By Pass Road Khanpur</h4>
+      </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script type="text/javascript">
@@ -285,8 +588,32 @@
              }else{
                 x.style.display="none";
              }
-        }   
+        } 
 
-    </script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
